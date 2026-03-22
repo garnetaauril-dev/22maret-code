@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main () {
+    int i, n;
+    int angka;
+
+    printf("Masukkan jumlah baris: ");
+    scanf("%d", &n);
+    
+    angka = n;
+
+    for(i = 1; i <= n; i++){
+            printf("%d ", angka);
+            angka += n;
+        }
+    
+}

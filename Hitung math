@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d, e, f;
+
+    printf("Masukkan 3 angka untuk himpunan A dipisahkan oleh enter:\n");
+    scanf("%d%d%d", &a, &b, &c);
+
+    printf("Masukkan 3 angka untuk himpunan B dipisahkan oleh enter:\n");
+    scanf("%d%d%d", &d, &e, &f);
+
+    printf("Himpunan A memiliki angka : %d %d %d\n", a, b, c);
+    printf("Himpunan B memiliki angka : %d %d %d\n", d, e, f);
+
+    printf("Gabungan dari himpunan A dan B adalah : %d %d %d %d %d %d\n", a, b, c, d, e, f);
+
+    printf("Irisan dari himpunan A dan B adalah : ");
+    if (a == d || a == e || a == f) printf("%d ", a);
+    if (b == d || b == e || b == f) printf("%d ", b);
+    if (c == d || c == e || c == f) printf("%d ", c);
+    printf("\n");
+
+    printf("Beda setangkup dari himpunan A dan B adalah : ");
+    if (a != d && a != e && a != f) printf("%d ", a);
+    if (b != d && b != e && b != f) printf("%d ", b);
+    if (c != d && c != e && c != f) printf("%d ", c);
+    if (d != a && d != b && d != c) printf("%d ", d);
+    if (e != a && e != b && e != c) printf("%d ", e);
+    if (f != a && f != b && f != c) printf("%d ", f);
+    printf("\n");
+
+    return 0;
+}

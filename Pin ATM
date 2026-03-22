@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main () {
+	int pin = 234;
+	int nebak, nyoba;
+	
+	while(nyoba <= 3){
+		printf("Masukan pin anda: ");
+		scanf("%d", &nebak);
+	
+		if(nebak == pin){
+			printf("Pin anda benar\n");
+			{
+				break;
+			}
+		} else if(nebak != pin){
+			printf("Pin anda salah. Coba lagi\n");
+			nyoba++;
+		}
+	}
+	
+	while(nyoba > 3){
+		printf("Anda sudah salah lebih dari 3 kali. Kartu anda terblokir.");
+		{
+			break;
+		}
+	}
+	
+}
